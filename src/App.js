@@ -3,6 +3,7 @@ import "./assets/styles/App.css";
 import "./assets/styles/App-min-490px.css";
 import "./assets/styles/App-min-1024px.css";
 import "./assets/styles/App-min-1280px.css";
+import "./assets/styles/App-min-1536px.css";
 
 function App() {
   return (
@@ -20,7 +21,7 @@ function App() {
 
         {/* Website 3D model */}
 
-        {/* Technologies */}
+        {/* Compétences */}
         <div className="skills">
           <ul>
             <li>HTML / CSS</li>
