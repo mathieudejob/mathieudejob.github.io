@@ -15,3 +15,22 @@
   padding: 30px;
   color: var(--main-font-color);
 }
+
+/* ------------- */
+/*  Main title   */
+/* ------------- */
+.titleContainer {
+  text-transform: uppercase;
+  color: var(--main-font-color);
+  grid-area: a;
+}
+
+h1 {
+  font-size: 86px;
+  font-weight: 300;
+  line-height: 80px;
+}
+
+h1 span {
+  font-weight: 800;
+}
