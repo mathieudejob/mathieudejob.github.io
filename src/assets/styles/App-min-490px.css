@@ -1,14 +1,24 @@
 @media screen and (min-width: 490px) {
+  .container {
+    margin-bottom: 480px;
+  }
+
+  .webgl {
+    height: 400px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+  }
+  
   h1 {
     font-size: 66px;
     line-height: 66px;
   }
 
-  /* .skills,
+  .skills,
   .apropos,
   .contactsContainer {
     margin-bottom: 20px;
-  } */
+  }
 
   .skills h2,
   .contactsContainer h2,

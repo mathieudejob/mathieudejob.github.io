@@ -1,11 +1,16 @@
 // React
 import React, { useEffect } from "react";
+import { Suspense } from "react";
+import { Canvas } from "@react-three/fiber";
+import { Html, Loader } from "@react-three/drei";
 // Styles
 import "./assets/styles/App.css";
 import "./assets/styles/App-min-490px.css";
 import "./assets/styles/App-min-1024px.css";
 import "./assets/styles/App-min-1280px.css";
 import "./assets/styles/App-min-1536px.css";
+// 3D model
+import Model from "./assets/components/Website-anim";
 
 function App() {
   useEffect(() => {
@@ -72,6 +77,33 @@ function App() {
         </div>
 
         {/* Website 3D model */}
+        <div className="webgl">
+          <Canvas shadows>
+            <ambientLight intensity={0.1} />
+            <pointLight
+              position={[10, 10, 10]}
+              intensity={0.2}
+              distance={2000}
+            />
+            <spotLight
+              position={[-20, 10, 20]}
+              angle={0.2}
+              intensity={1}
+              distance={100}
+              castShadow
+            />
+            {/* <OrbitControls /> */}
+            <Suspense
+              fallback={
+                <Html center>
+                  <Loader />
+                </Html>
+              }
+            >
+              <Model />
+            </Suspense>
+          </Canvas>
+        </div>
 
         {/* Compétences */}
         <div className="skills">

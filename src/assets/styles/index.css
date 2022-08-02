@@ -1,3 +1,9 @@
+/* Global variable */
+* {
+  --main-font-color: rgb(2, 91, 150);
+}
+
+/* Main CSS */
 *,
 ::before,
 ::after {
@@ -6,8 +12,20 @@
   box-sizing: border-box;
 }
 
+html,
+body,
+#root {
+  width: 100%;
+  height: auto;
+  min-height: 100% !important;
+  overflow-x: hidden;
+  overflow-y: visible;
+}
+
 body {
-  margin: 0;
+  width: 100%;
+  height: auto;
+  min-height: 100% !important;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
@@ -15,17 +33,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-body {
-  --main-font-color: rgb(2, 91, 150);
-}
-
-html,
-body,
-#root {
-  width: 100%;
-  height: 100vh;
-  overflow-x: visible;
-}
 
 #root {
   position: relative;

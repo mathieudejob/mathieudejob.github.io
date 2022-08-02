@@ -1,7 +1,16 @@
 @media screen and (min-width: 1280px) {
   /* ------------- */
+  /*  Main element */
+  /* ------------- */
+  .webgl {
+    width: 82%;
+    height: 82vh;
+  }
+
+  /* ------------- */
   /*  Main title   */
   /* ------------- */
+
   h1 {
     font-size: 76px;
     line-height: 76px;

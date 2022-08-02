@@ -1,5 +1,13 @@
 @media screen and (min-width: 1536px) {
   /* ------------- */
+  /*  Main element */
+  /* ------------- */
+  .webgl {
+    width: 95%;
+    height: 95vh;
+  }
+
+  /* ------------- */
   /*  Main title   */
   /* ------------- */
   h1 {
