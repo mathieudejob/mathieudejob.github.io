@@ -30,12 +30,13 @@ body {
   text-transform: uppercase;
   color: var(--main-font-color);
   grid-area: a;
+  padding-top: 60px;
 }
 
 h1 {
-  font-size: 56px;
+  font-size: 48px;
   font-weight: 300;
-  line-height: 56px;
+  line-height: 46px;
 }
 
 h1 span {
@@ -50,7 +51,8 @@ h1 span {
   width: 100%;
   display: inline-flex;
   flex-direction: column-reverse;
-  margin-bottom: 20px;
+  justify-content: center;
+  /* margin-bottom: 20px; */
 }
 
 .skills h2 {
@@ -72,6 +74,7 @@ h1 span {
 .contactsContainer {
   grid-area: b;
   text-align: center;
+  /* margin-bottom: 20px; */
 }
 
 .contactsContainer h2 {
@@ -90,9 +93,35 @@ h1 span {
 }
 
 .contactsBox h3 {
-  font-size: 28px;
+  font-size: 18px;
 }
 
 .contactsBox p {
-  font-size: 22px;
+  font-size: 15px;
+}
+
+/* ------------- */
+/*   A propos    */
+/* ------------- */
+.apropos {
+  grid-area: d;
+  width: 100%;
+  display: inline-flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  text-align: center;
+  /* margin-bottom: 20px; */
+}
+
+.apropos h2 {
+  font-size: 46px;
+  font-weight: 400;
+  line-height: 80px;
+  text-transform: capitalize;
+}
+
+.apropos ul {
+  margin-bottom: 8px;
+  list-style-type: none;
+  font-size: 15px;
 }
