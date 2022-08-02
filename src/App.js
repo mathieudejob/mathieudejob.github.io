@@ -1,3 +1,5 @@
+// React
+import React, { useEffect } from "react";
 // Styles
 import "./assets/styles/App.css";
 import "./assets/styles/App-min-490px.css";
@@ -6,6 +8,56 @@ import "./assets/styles/App-min-1280px.css";
 import "./assets/styles/App-min-1536px.css";
 
 function App() {
+  useEffect(() => {
+    const skillsTitle = document.querySelector(".skills h2");
+    const skillsLi = document.querySelectorAll(".skills ul li");
+    const contactTitle = document.querySelector(".contactsContainer h2");
+    const aproposTitle = document.querySelector(".apropos h2");
+    const tel = document.querySelector(".contactsContainer div:nth-child(2)");
+    const mail = document.querySelector(".contactsContainer div:last-child");
+    const aproposLi = document.querySelectorAll(".apropos ul li");
+
+    const timer = setTimeout(() => {
+      // Titles
+      skillsTitle.style.transform = "translateY(0px)";
+      skillsTitle.style.transition = "transform 400ms ease-in";
+      contactTitle.style.transform = "translateY(0px)";
+      contactTitle.style.transition = "transform 400ms ease-in";
+      aproposTitle.style.transform = "translateY(0px)";
+      aproposTitle.style.transition = "transform 400ms ease-in";
+
+      // Contacts contents
+      tel.style.transform = "translateX(0px)";
+      tel.style.transition = "transform 200ms ease-in 1s";
+      mail.style.transform = "translateX(0px)";
+      mail.style.transition = "transform 200ms ease-in 1s";
+    }, 1000);
+
+    const timer2 = setTimeout(() => {
+      // Skills contents
+      skillsLi.forEach((element, i) => {
+        setTimeout(() => {
+          element.style.transform = "translateX(0px)";
+          element.style.transition = "transform 700ms ease-in";
+        }, i * 100);
+      });
+
+      // A propos contents
+      aproposLi.forEach((element, i) => {
+        setTimeout(() => {
+          element.style.transform = "translateX(0px)";
+          element.style.transition = "transform 700ms ease-in";
+        }, i * 100);
+      });
+    }, 2500);
+
+    // Clear all timeout
+    return () => {
+      clearTimeout(timer);
+      clearTimeout(timer2);
+    };
+  }, []);
+
   return (
     <>
       {/* HTML page contents */}

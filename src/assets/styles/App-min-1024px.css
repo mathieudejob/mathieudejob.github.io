@@ -25,6 +25,7 @@
   /* ------------- */
   .titleContainer {
     padding-top: 0px;
+    text-align: start;
   }
 
   h1 {
@@ -41,6 +42,7 @@
     align-self: flex-end;
     flex-direction: none;
     justify-content: none;
+    text-align: start;
   }
 
   .skills h2 {
@@ -103,5 +105,36 @@
   .apropos ul {
     font-size: 16px;
     margin-bottom: none;
+  }
+  
+  /* ---------- */
+  /* Animations */
+  /* ---------- */
+  .skills h2 {
+    transform: translateY(150px);
+  }
+  
+  .skills ul li {
+    transform: translateX(-320px);
+  }
+  
+  .contactsContainer h2 {
+    transform: translateY(-150px);
+  }
+  
+  .apropos h2 {
+    transform: translateY(150px);
+  }
+  
+  .contactsContainer div:nth-child(2)  {
+    transform: translateX(300px);
+  }
+  
+  .contactsContainer div:last-child  {
+    transform: translateX(300px);
+  }
+  
+  .apropos ul li {
+    transform: translateX(340px);
   }
 }
