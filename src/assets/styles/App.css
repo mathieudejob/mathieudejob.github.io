@@ -10,17 +10,29 @@ body {
   height: 100vh;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
   grid-column-gap: 0px;
   grid-row-gap: 0px;
   grid-template-areas:
     "a a"
+    "model3d model3d"
     "d d"
     "b b"
     "c c";
   padding: 30px;
   text-align: center;
   color: var(--main-font-color);
+  margin-bottom: 250px;
+}
+
+.webgl {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  grid-area: model3d;
+  z-index: 0;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 
 /* ------------- */
