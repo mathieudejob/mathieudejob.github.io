@@ -1,0 +1,107 @@
+@media screen and (min-width: 1024px) {
+  #root {
+    position: relative;
+    background: radial-gradient(
+      circle,
+      rgba(120, 85, 139, 0.05) 0%,
+      rgba(120, 85, 139, 0.3) 30%,
+      rgb(207, 132, 245) 100%
+    );
+    overflow: hidden;
+  }
+
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+      "a b"
+      "c d";
+    padding: 30px;
+    text-align: none;
+  }
+
+  /* ------------- */
+  /*  Main title   */
+  /* ------------- */
+  .titleContainer {
+    padding-top: 0px;
+  }
+
+  h1 {
+    font-size: 66px;
+    font-weight: 300;
+    line-height: 66px;
+  }
+
+  /* ------------- */
+  /*    Skills     */
+  /* ------------- */
+  .skills {
+    display: block;
+    align-self: flex-end;
+    flex-direction: none;
+    justify-content: none;
+  }
+
+  .skills h2 {
+    font-size: 56px;
+    font-weight: 300;
+    line-height: 56px;
+  }
+
+  .skills ul {
+    font-size: 16px;
+    margin-bottom: none;
+  }
+
+  /* ------------- */
+  /*    Contacts   */
+  /* ------------- */
+  .contactsContainer {
+    text-align: right;
+  }
+
+  .contactsContainer h2 {
+    font-size: 56px;
+    font-weight: 300;
+    line-height: 50px;
+  }
+
+  .contactsTitle {
+    margin-bottom: 10px;
+  }
+
+  .contactsBox {
+    padding-top: 10px;
+  }
+
+  .contactsBox h3 {
+    font-size: 20px;
+  }
+
+  .contactsBox p {
+    font-size: 16px;
+  }
+
+  /* ------------- */
+  /*   A propos    */
+  /* ------------- */
+  .apropos {
+    display: block;
+    align-self: flex-end;
+    flex-direction: none;
+    justify-content: none;
+    text-align: right;
+  }
+
+  .apropos h2 {
+    font-size: 56px;
+    font-weight: 300;
+    line-height: 56px;
+  }
+
+  .apropos ul {
+    font-size: 16px;
+    margin-bottom: none;
+  }
+}

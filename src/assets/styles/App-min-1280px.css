@@ -1,0 +1,50 @@
+@media screen and (min-width: 1280px) {
+  /* ------------- */
+  /*  Main title   */
+  /* ------------- */
+  h1 {
+    font-size: 76px;
+    line-height: 76px;
+  }
+
+  /* ------------- */
+  /*    Skills     */
+  /* ------------- */
+  .skills h2 {
+    font-size: 76px;
+    line-height: 76px;
+  }
+
+  .skills ul {
+    font-size: 20px;
+  }
+
+  /* ------------- */
+  /*    Contacts   */
+  /* ------------- */
+  .contactsContainer h2 {
+    font-size: 76px;
+    line-height: 70px;
+  }
+
+  .contactsBox h3 {
+    font-size: 24px;
+  }
+
+  .contactsBox p {
+    font-size: 20px;
+  }
+
+  /* ------------- */
+  /*   A propos    */
+  /* ------------- */
+  .apropos h2 {
+    font-size: 76px;
+    line-height: 76px;
+  }
+
+  .apropos ul {
+    font-size: 20px;
+    margin-bottom: none;
+  }
+}

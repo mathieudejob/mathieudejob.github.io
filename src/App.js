@@ -1,5 +1,9 @@
 // Styles
 import "./assets/styles/App.css";
+import "./assets/styles/App-min-490px.css";
+import "./assets/styles/App-min-1024px.css";
+import "./assets/styles/App-min-1280px.css";
+import "./assets/styles/App-min-1536px.css";
 
 function App() {
   return (
@@ -17,7 +21,7 @@ function App() {
 
         {/* Website 3D model */}
 
-        {/* Technologies */}
+        {/* Compétences */}
         <div className="skills">
           <ul>
             <li>HTML / CSS</li>
@@ -35,13 +39,12 @@ function App() {
             <h2>contacts</h2>
           </div>
           <div className="contactsBox">
-            <h3>tel</h3>
-            <p>+336 31 66 30 86</p>
-          </div>
-
-          <div className="contactsBox">
             <h3>mail</h3>
             <p>dejob.mathieu@gmail.com</p>
+          </div>
+          <div className="contactsBox">
+            <h3>tel</h3>
+            <p>+336 31 66 30 86</p>
           </div>
         </div>
 
