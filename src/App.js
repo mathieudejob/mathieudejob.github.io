@@ -2,6 +2,7 @@
 import "./assets/styles/App.css";
 import "./assets/styles/App-min-490px.css";
 import "./assets/styles/App-min-1024px.css";
+import "./assets/styles/App-min-1280px.css";
 
 function App() {
   return (
