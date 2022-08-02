@@ -1,0 +1,127 @@
+/* ------------- */
+/* Main elements */
+/* ------------- */
+body {
+  --main-font-color: rgb(2, 91, 150);
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  grid-template-areas:
+    "a a"
+    "d d"
+    "b b"
+    "c c";
+  padding: 30px;
+  text-align: center;
+  color: var(--main-font-color);
+}
+
+/* ------------- */
+/*  Main title   */
+/* ------------- */
+.titleContainer {
+  text-transform: uppercase;
+  color: var(--main-font-color);
+  grid-area: a;
+  padding-top: 60px;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 300;
+  line-height: 46px;
+}
+
+h1 span {
+  font-weight: 800;
+}
+
+/* ------------- */
+/*    Skills     */
+/* ------------- */
+.skills {
+  grid-area: c;
+  width: 100%;
+  display: inline-flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  /* margin-bottom: 20px; */
+}
+
+.skills h2 {
+  font-size: 46px;
+  font-weight: 400;
+  line-height: 80px;
+  text-transform: capitalize;
+}
+
+.skills ul {
+  font-size: 15px;
+  list-style-type: none;
+  margin-bottom: 8px;
+}
+
+/* ------------- */
+/*    Contacts   */
+/* ------------- */
+.contactsContainer {
+  grid-area: b;
+  text-align: center;
+  /* margin-bottom: 20px; */
+}
+
+.contactsContainer h2 {
+  font-size: 46px;
+  font-weight: 400;
+  line-height: 80px;
+  text-transform: capitalize;
+}
+
+.contactsTitle {
+  margin-bottom: -20px;
+}
+
+.contactsBox {
+  padding-top: 15px;
+}
+
+.contactsBox h3 {
+  font-size: 18px;
+}
+
+.contactsBox p {
+  font-size: 15px;
+}
+
+/* ------------- */
+/*   A propos    */
+/* ------------- */
+.apropos {
+  grid-area: d;
+  width: 100%;
+  display: inline-flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  text-align: center;
+  /* margin-bottom: 20px; */
+}
+
+.apropos h2 {
+  font-size: 46px;
+  font-weight: 400;
+  line-height: 80px;
+  text-transform: capitalize;
+}
+
+.apropos ul {
+  margin-bottom: 8px;
+  list-style-type: none;
+  font-size: 15px;
+}
