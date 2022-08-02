@@ -1,9 +1,6 @@
-@media screen and (min-width: 1024px) and (max-width: 1279px) {
+@media screen and (min-width: 1024px) {
   #root {
     position: relative;
-    /* background: rgb(190, 138, 216); */
-    /* background: rgb(240,199,240); */
-    /* background: linear-gradient(354deg, rgba(240,199,240,1) 0%, rgba(237,117,170,1) 100%);} */
     background: radial-gradient(
       circle,
       rgba(120, 85, 139, 0.05) 0%,
