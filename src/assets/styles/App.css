@@ -41,3 +41,27 @@ h1 {
 h1 span {
   font-weight: 800;
 }
+
+/* ------------- */
+/*    Skills     */
+/* ------------- */
+.skills {
+  grid-area: c;
+  width: 100%;
+  display: inline-flex;
+  flex-direction: column-reverse;
+  margin-bottom: 20px;
+}
+
+.skills h2 {
+  font-size: 46px;
+  font-weight: 400;
+  line-height: 80px;
+  text-transform: capitalize;
+}
+
+.skills ul {
+  font-size: 15px;
+  list-style-type: none;
+  margin-bottom: 8px;
+}
