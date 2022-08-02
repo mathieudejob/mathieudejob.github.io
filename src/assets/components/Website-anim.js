@@ -9,12 +9,10 @@ import { useFrame } from "@react-three/fiber";
 export default function Model({ ...props }) {
   // Const definitions
   const group = useRef();
-  console.log("Before useGLTF");
   const { nodes, materials, animations } = useGLTF(
     "./website-anim.gltf"
     // "https://mathieudejob.github.io/portfolio2/website-anim.gltf"
   );
-  console.log("After useGLTF");
   const { actions } = useAnimations(animations, group);
   const incrementX = useRef(true);
   const incrementY = useRef(true);
