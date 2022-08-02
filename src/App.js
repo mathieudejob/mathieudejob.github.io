@@ -1,5 +1,6 @@
 // Styles
 import "./assets/styles/App.css";
+import "./assets/styles/App-min-490px.css";
 
 function App() {
   return (

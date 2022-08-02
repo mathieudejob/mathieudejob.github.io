@@ -1,0 +1,32 @@
+@media screen and (min-width: 490px) {
+  h1 {
+    font-size: 66px;
+    line-height: 66px;
+  }
+
+  /* .skills,
+  .apropos,
+  .contactsContainer {
+    margin-bottom: 20px;
+  } */
+
+  .skills h2,
+  .contactsContainer h2,
+  .apropos h2 {
+    font-size: 56px;
+  }
+
+  .skills ul,
+  .contactsBox p,
+  .apropos ul {
+    font-size: 16px;
+  }
+
+  .contactsTitle {
+    margin-bottom: -20px;
+  }
+
+  .contactsBox h3 {
+    font-size: 20px;
+  }
+}
