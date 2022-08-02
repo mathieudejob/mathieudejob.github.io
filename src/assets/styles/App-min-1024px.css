@@ -25,6 +25,7 @@
   /* ------------- */
   .titleContainer {
     padding-top: 0px;
+    text-align: start;
   }
 
   h1 {
@@ -41,6 +42,7 @@
     align-self: flex-end;
     flex-direction: none;
     justify-content: none;
+    text-align: start;
   }
 
   .skills h2 {
