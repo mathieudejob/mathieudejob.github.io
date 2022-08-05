@@ -11,8 +11,14 @@ import "./assets/styles/App-min-1280px.css";
 import "./assets/styles/App-min-1536px.css";
 // 3D model
 import Model from "./assets/components/Website-anim";
+import Swal from "sweetalert2";
 
 function App() {
+  Swal.fire({
+    text: "Ce site est une vesrsion temoporaire de mon portfolio.\n La vesrsion finale est en cours de construction :)",
+    width: "50%",
+  });
+
   useEffect(() => {
     const skillsTitle = document.querySelector(".skills h2");
     const skillsLi = document.querySelectorAll(".skills ul li");
