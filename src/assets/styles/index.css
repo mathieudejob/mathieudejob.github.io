@@ -38,8 +38,9 @@ body {
   position: relative;
   background: radial-gradient(
     circle,
-    rgba(120, 85, 139, 0.05) 0%,
-    rgba(120, 85, 139, 0.3) 30%,
-    rgb(207, 132, 245) 100%
-  );
-}
+    rgba(197, 108, 241, 0.3) 0%,
+    rgba(121, 63, 150, 0.7) 100%,
+    rgba(0, 0, 0, 0.5) 100%
+    );
+  }
+  
