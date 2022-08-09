@@ -15,7 +15,7 @@ import Swal from "sweetalert2";
 
 function App() {
   Swal.fire({
-    text: "Ce site est une vesrsion temoporaire de mon portfolio.\n La vesrsion finale est en cours de construction :)",
+    text: "Ce site regroupe des informations me concernant mais est temporaire.\n Mon portfolio est en cours de construction ! :)",
     width: "50%",
   });
 
